@@ -13,7 +13,7 @@ def triangle_area(x1, y1, x2, y2, x3, y3):
     with open('area.txt', 'w') as f:
         f.write(str(area))
 
-    with open('truefalse', 'w') as file:
+    with open('truefalse.txt', 'w') as file:
         file.write('True' if is_right else 'False')
 
 
