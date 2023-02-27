@@ -39,14 +39,17 @@ often_word(input('Введите текст: '))
 # 3 задание
 
 def sorting_time(n):
-    times = []
+    all_times = []
     for i in range(n):
-        h, m, s = map(int, input('Введите время: ').split())
-        times.append((h, m, s))
-    sorted_times = sorted(times)
+        times = []
+        for k in range(n):
+            h, m, s = map(int, input('Введите время: ').split())
+            times.append((h, m, s))
+        sorted_times = sorted(times)
+        all_times.append(sorted_times)
 
-    for hours in sorted_times:
-        print(f'{hours[0]}:{hours[1]}:{hours[2]}')
+    for time in all_times:
+        print(time)
 
 
-sorting_time(2)
+sorting_time(3)
